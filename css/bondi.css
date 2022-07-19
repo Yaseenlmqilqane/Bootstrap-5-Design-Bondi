@@ -1,0 +1,197 @@
+
+:root {
+    --dark-clr: #19283f;
+    --bluesky-clr: #33d1cc;
+    --red-clr: #ff3150;
+    --yallow-clr: #ffc400;
+    --section-clr: #eff7fa;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--red-clr);
+    color: var(--yallow-clr);
+    border: none;
+    padding: .5rem 2rem;
+}
+.main-btn:hover {
+    border: none;
+    color: var(--yallow-clr);
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--bluesky-clr);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark-clr);
+}
+.navbar .container .navbar-brand img {
+    width: 70px;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--bluesky-clr);
+}
+.navbar .search {
+    border-left: solid 1px var(--bluesky-clr);
+}
+.navbar .search i {
+    color: var(--bluesky-clr);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--bluesky-clr);
+}
+.navbar .navbar-toggler i {
+    color: white;
+}
+/* Start Navbar */
+/* Start Landing */
+.landing {
+    background-color: var(--dark-clr);
+    min-height: calc(100vh - 72px);
+}
+/* Start Landing */
+/* Start Features */
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder i {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    color: var(--section-clr);
+    font-size: 12rem;
+}
+.features .icon-holder .icon {
+    color: var(--bluesky-clr);
+    font-size: 3rem;
+    top: 140px;
+}
+.features .feat h4 {
+    color: var(--yallow-clr);
+}
+/* End Features */
+/* Start Our Work Section */
+.our-work {
+    background-color: var(--section-clr);
+}
+.our-work ul .active {
+    background-color: var(--red-clr);
+    color: var(--yallow-clr);
+}
+.our-work ul li {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+.our-work ul li:not(.active):hover {
+    color: var(--red-clr);
+}
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before {
+    content: attr(deta-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 59%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    font-size: 1.3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(calc(-100% - 5px));
+    transition: .3s;
+}
+.our-work .box:hover::before {
+    transform: translatex(0);
+}
+.our-work .box img {
+    width: 100%;
+}
+/* End Our Work Section */
+/* Start stuff */
+.stuff .text-descrption {
+    max-width: 600px;
+    text-align: center;
+}
+/* End stuff */
+/* Start Team */
+.team {
+    background-color: var(--section-clr);
+}
+.team .box h4 {
+    background-color: var(--bluesky-clr);
+}
+.team h2 {
+    color: var(--yallow-clr);
+}
+/* End Team */
+/* Start Project */
+.project {
+    background-color: var(--dark-clr);
+}
+/* End Project */
+/* Start Our Blog */
+.blog .row .card {
+    border: none;
+}
+/* End Our Blog */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yallow-clr);
+}
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe .row input[type="submit"] {
+    background-color: var(--dark-clr);
+    color: var(--yallow-clr);
+    border: none;
+    padding: 10px 30px;
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+    background-color: var(--dark-clr);
+}
+.footer .copyright > span {
+    color: var(--bluesky-clr);
+}
+.footer .copyright div span {
+    color: var(--yallow-clr);
+}
+/* End Footer */
